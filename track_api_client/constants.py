@@ -1,0 +1,3 @@
+VERSION = '1.0'
+API_KEY_HEADER = 'api_key'
+ALLOWED_METHODS = ['GET']
