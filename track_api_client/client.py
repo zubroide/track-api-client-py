@@ -104,7 +104,7 @@ class ApiClient:
             ex_class = exceptions.ApiClientBadRequest
         if status == 401:
             ex_class = exceptions.ApiClientUnauthorized
-        raise ex_class(method_name, request=request_options, response=response)
+        raise ex_class(method_name, 'Incorrect response status', request=request_options, response=response)
 
     def get_status(self, response: requests.Response):
         return response.status_code
